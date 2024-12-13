@@ -2,6 +2,10 @@
 
 ## Aluno: Davi Abreu da Silveira - T14
 
+### Link para o Wokwi [aqui](https://wokwi.com/projects/417159999818676225)
+
+## Avaliação:
+
 1) Todo o código deve estar padronizado para inglês ou português, incluindo comentários (1,0 ponto);
 
 O código foi todo padronizado em ingles, tanto comentários, quanto variáveis.
@@ -55,6 +59,18 @@ void setup() {
 
 4) Quando estiver escuro (segundo a leitura analógica do sensor LDR), o protótipo deve ativar o modo noturno e piscar o led amarelo a cada segundo (até 1,0 ponto);
 
+<br>
+<div align="center">
+<sub>Figura 1 - Led Amarelo Aceso</sub>
+<br>
+<br>
+<img src="assets\led_amarelo.png" alt="Cinco Forças de Porter">
+<br>
+<br>
+<sup>Fonte: Material produzido pelo grupo BiMu (2024)</sup>
+</div>
+<br>
+
 Quando escuro, o ldrstatus fica menor que o threshold e cai no if abaixo, que pisca o led amarelo a cada segundo.
 
 ```c++
@@ -75,6 +91,18 @@ Quando escuro, o ldrstatus fica menor que o threshold e cai no if abaixo, que pi
 5) Quando estiver claro (segundo a leitura analógica do sensor LDR), o protótipo deve ativar o modo convencional e fazer a temporização alternando entre verde (3 segundos), amarelo (2 segundos) e vermelho (5 segundos) (até 2,0 pontos);
 
 Quando claro, o ldrstatus fica maior que o threshold e cai no if abaixo, que os leds piscam na ordem e tempo estipulado.
+
+<br>
+<div align="center">
+<sub>Figura 2 - Led Vermelho Aceso</sub>
+<br>
+<br>
+<img src="assets\vermelho.png" alt="Cinco Forças de Porter">
+<br>
+<br>
+<sup>Fonte: Material produzido pelo grupo BiMu (2024)</sup>
+</div>
+<br>
 
 ```c++
 //5
