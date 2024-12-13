@@ -35,15 +35,15 @@ void setup() {
   digitalWrite(led_green, LOW);
   digitalWrite(led_red, LOW);
 
-  // //wifi connection
-  // Serial.begin(9600);
-  // Serial.print("Connecting to Wi-Fi");
-  // WiFi.begin("Wokwi-GUEST", "", 6);
-  // while (WiFi.status() != WL_CONNECTED) {
-  //   delay(100);
-  //   Serial.print(".");
-  // }
-  // Serial.println(" Connected!");
+  //wifi connection
+  Serial.begin(9600);
+  Serial.print("Connecting to Wi-Fi");
+  WiFi.begin("Wokwi-GUEST", "", 6);
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(100);
+    Serial.print(".");
+  }
+  Serial.println(" Connected!");
 }
 
 void sendHttpRequest() {
